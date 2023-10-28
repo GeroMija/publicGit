@@ -1,4 +1,3 @@
-
 # This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -22,13 +21,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install node
-        uses: cypress-io/github-action@v6
+        uses: actions/setup-node@v2
         with:
             node:version: '16'
       - name: Install dependencies
         run: npm install       
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v6
         with:
           # TODO: Make normal variables
           # https://github.com/cypress-io/github-action#env
