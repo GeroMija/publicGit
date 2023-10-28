@@ -17,7 +17,7 @@ module.exports = defineConfig({
     env: {
         BASIC_AUTH_USER: "name",
         BASIC_AUTH_PASSWORD: "pass",
-        CY_BASE_URL: "https://",
+        CY_BASE_URL: "https://www.lego.com/",
     },
 
     projectId: "1",
