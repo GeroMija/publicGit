@@ -1,1 +1,18 @@
-{}
+{
+    "input": {
+        "textarea": "textarea",
+        "noteLink": "#note_link_input"
+    },
+    "popUp": {
+        "popUpCookies": ".cookie-info"
+    },
+    "btn": {
+        "encryptNote": "#encrypt_note",
+        "confirmButton": "#confirm_button"
+    },
+    "section": {
+        "createdNode": "#created_note",
+        "confirmReadNote": "#confirm_read_note",
+        "okContent": "#ok_content"
+    }
+}

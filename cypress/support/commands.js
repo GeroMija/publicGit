@@ -24,10 +24,14 @@
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-import './commands/auth'
+import './commands/note'
 
 
 
 Cypress.Commands.add('visitAuth', (url = {}) => {
-    cy.visit(url, {})
+    cy.visit(url, {
+        onBeforeLoad(win) {
+            win.localStorage.setItem('cookie-modal', 1)
+        },
+    })
 });
