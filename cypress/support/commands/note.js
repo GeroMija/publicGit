@@ -1,6 +1,7 @@
 let s = require('../../storage/data_selectors.json')
 
 Cypress.Commands.add('createNewNote', (info) => {
+    cy.intercept('post', '**/note/create**').as('create')
     cy.visitAuth(`${Cypress.env('CY_BASE_URL')}`);
     cy.get(s.input.textarea)
         .type(info.note);
