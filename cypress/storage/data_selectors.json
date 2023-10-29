@@ -8,11 +8,14 @@
     },
     "btn": {
         "encryptNote": "#encrypt_note",
-        "confirmButton": "#confirm_button"
+        "confirmButton": "#confirm_button",
+        "button": ".button"
     },
     "section": {
+        "createNote": "#create_note",
         "createdNode": "#created_note",
         "confirmReadNote": "#confirm_read_note",
-        "okContent": "#ok_content"
+        "okContent": "#ok_content",
+        "noteError": "#note_error"
     }
 }
