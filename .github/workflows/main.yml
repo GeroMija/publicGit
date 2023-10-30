@@ -26,7 +26,7 @@ jobs:
             node:version: '16'
       - name: Install dependencies
         run: npm install       
-      - name: Cypress run
+      - name: Cypress run --record --key b939e116-f24a-4152-8279-d2846b6aeee5
         uses: cypress-io/github-action@v6
         with:
           # TODO: Make normal variables
