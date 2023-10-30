@@ -20,7 +20,7 @@ module.exports = defineConfig({
         CY_BASE_URL: "https://pirvnota.com",
     },
 
-    projectId: "1",
+    projectId: "2speuu",
 
     e2e: {
         setupNodeEvents(on, config) {
