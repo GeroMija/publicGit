@@ -26,6 +26,35 @@
 
 import './commands/note'
 
+let appHasStarted;
+
+function spyOnAddEventListener(win) {
+    // win = window object in our application
+    const addListener = win.EventTarget.prototype.addEventListener
+    win.EventTarget.prototype.addEventListener = function(name) {
+        if (name === 'change') {
+            // web app added an event listener to the input box -
+            // that means the web application has started
+            appHasStarted = true
+                // restore the original event listener
+            win.EventTarget.prototype.addEventListener = addListener
+        }
+        return addListener.apply(this, arguments)
+    }
+}
+
+function waitForAppStart() {
+    // keeps rechecking "appHasStarted" variable
+    return new Cypress.Promise((resolve, reject) => {
+        const isReady = () => {
+            if (appHasStarted) {
+                return resolve()
+            }
+            setTimeout(isReady, 0)
+        }
+        isReady()
+    })
+}
 
 
 Cypress.Commands.add('visitAuth', (url = {}) => {
@@ -33,5 +62,14 @@ Cypress.Commands.add('visitAuth', (url = {}) => {
         onBeforeLoad(win) {
             win.localStorage.setItem('cookie-modal', 1)
         },
-    })
+        onBeforeLoad: spyOnAddEventListener,
+    }).then(waitForAppStart).wait(1);
+
 });
+
+
+
+// onBeforeLoad(win) {
+//     win.localStorage.setItem('cookie-modal', 1)
+// }
+// })
