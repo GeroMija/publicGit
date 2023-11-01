@@ -57,19 +57,27 @@ function waitForAppStart() {
 }
 
 
+// Cypress.Commands.add('visitAuth', (url = {}) => {
+//     cy.visit(url, {
+//         onBeforeLoad: spyOnAddEventListener,
+//     }).then(waitForAppStart).wait(1);
+
+// });
+
 Cypress.Commands.add('visitAuth', (url = {}) => {
     cy.visit(url, {
         onBeforeLoad(win) {
             win.localStorage.setItem('cookie-modal', 1)
         },
-        onBeforeLoad: spyOnAddEventListener,
-    }).then(waitForAppStart).wait(1);
-
+    })
 });
-
-
 
 // onBeforeLoad(win) {
 //     win.localStorage.setItem('cookie-modal', 1)
 // }
 // })
+
+
+// onBeforeLoad(win) {
+//     win.localStorage.setItem('cookie-modal', 1)
+// },
