@@ -19,11 +19,13 @@ Cypress.Commands.add('getNote', (info) => {
     if (info.open)
         cy.get(s.section.createdNode).find(s.input.noteLink).then(link => {
             let url = link[0].value
+
+            cy.visitAuth(`${Cypress.env('CY_BASE_URL')}`);
             cy.visit(url);
             cy.get(s.section.confirmReadNote).find(s.btn.confirmButton)
                 .click();
             cy.get(s.section.okContent)
-                .contains(info.note).should('be.visible').wai;
+                .contains(info.note).should('be.visible');
             if (info.reopen) {
                 cy.visitAuth(`${Cypress.env('CY_BASE_URL')}`);
                 cy.visit(url);
@@ -35,6 +37,7 @@ Cypress.Commands.add('getNote', (info) => {
     if (info.rejection)
         cy.get(s.section.createdNode).find(s.input.noteLink).then(link => {
             let url = link[0].value
+            cy.visitAuth(`${Cypress.env('CY_BASE_URL')}`);
             cy.visit(url);
             cy.get(s.section.confirmReadNote).find(s.btn.button)
                 .click();
