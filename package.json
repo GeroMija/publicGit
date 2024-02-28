@@ -6,11 +6,13 @@
     "author": "Nikitin Dmitriy <nikitin.dmitriy.qa@gmail.com>",
     "license": "MIT",
     "dependencies": {
-        "cypress": "13.3.3",
-        "cypress-plugin-snapshots": "^1.4.4"
+        "cypress": "13.3.3"
     },
     "scripts": {
         "cy:run": "cypress run",
         "cy:open": "cypress open"
+    },
+    "devDependencies": {
+        "@cypress/snapshot": "^2.1.7"
     }
 }
