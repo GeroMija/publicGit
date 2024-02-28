@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "repository": "git@github.com:GeroMija/publicGit.git",
-    "author": "Nikitin Dmitriy <wwwiaru@mail.ru>",
+    "author": "Nikitin Dmitriy <nikitin.dmitriy.qa@gmail.com>",
     "license": "MIT",
     "dependencies": {
         "cypress": "13.3.3"
