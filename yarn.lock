@@ -53,7 +53,7 @@
     "debug" "^3.1.0"
     "lodash.once" "^4.1.1"
 
-"@types/node@*", "@types/node@^18.17.5":
+"@types/node@*":
   "integrity" "sha512-bw+lEsxis6eqJYW8Ql6+yTqkE6RuFtsQPSe5JxXbqYRFQEER5aJA9a5UH9igqDWm3X4iLHIKOHlnAXLM4mi7uQ=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.18.7.tgz"
   "version" "18.18.7"
@@ -231,7 +231,7 @@
   "resolved" "https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz"
   "version" "0.2.13"
 
-"buffer@^5.6.0":
+"buffer@^5.7.1":
   "integrity" "sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ=="
   "resolved" "https://registry.npmjs.org/buffer/-/buffer-5.7.1.tgz"
   "version" "5.7.1"
@@ -382,20 +382,19 @@
     "shebang-command" "^2.0.0"
     "which" "^2.0.1"
 
-"cypress@13.3.3":
-  "integrity" "sha512-mbdkojHhKB1xbrj7CrKWHi22uFx9P9vQFiR0sYDZZoK99OMp9/ZYN55TO5pjbXmV7xvCJ4JwBoADXjOJK8aCJw=="
-  "resolved" "https://registry.npmjs.org/cypress/-/cypress-13.3.3.tgz"
-  "version" "13.3.3"
+"cypress@^13.6.6":
+  "integrity" "sha512-S+2S9S94611hXimH9a3EAYt81QM913ZVA03pUmGDfLTFa5gyp85NJ8dJGSlEAEmyRsYkioS1TtnWtbv/Fzt11A=="
+  "resolved" "https://registry.npmjs.org/cypress/-/cypress-13.6.6.tgz"
+  "version" "13.6.6"
   dependencies:
     "@cypress/request" "^3.0.0"
     "@cypress/xvfb" "^1.2.4"
-    "@types/node" "^18.17.5"
     "@types/sinonjs__fake-timers" "8.1.1"
     "@types/sizzle" "^2.3.2"
     "arch" "^2.2.0"
     "blob-util" "^2.0.2"
     "bluebird" "^3.7.2"
-    "buffer" "^5.6.0"
+    "buffer" "^5.7.1"
     "cachedir" "^2.3.0"
     "chalk" "^4.1.0"
     "check-more-types" "^2.24.0"
@@ -413,7 +412,7 @@
     "figures" "^3.2.0"
     "fs-extra" "^9.1.0"
     "getos" "^3.2.1"
-    "is-ci" "^3.0.0"
+    "is-ci" "^3.0.1"
     "is-installed-globally" "~0.4.0"
     "lazy-ass" "^1.6.0"
     "listr2" "^3.8.3"
@@ -792,7 +791,7 @@
   "resolved" "https://registry.npmjs.org/ini/-/ini-2.0.0.tgz"
   "version" "2.0.0"
 
-"is-ci@^3.0.0":
+"is-ci@^3.0.1":
   "integrity" "sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ=="
   "resolved" "https://registry.npmjs.org/is-ci/-/is-ci-3.0.1.tgz"
   "version" "3.0.1"
