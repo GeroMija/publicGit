@@ -1,4 +1,4 @@
-require('@cypress/snapshot').register()
+require('@cypress/snapshots/snapshots').register()
 it(`test2`, function() {
     cy.visit('https://uteka.ru').wait(1999)
         // cy.get('.header-main__inner')

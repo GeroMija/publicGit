@@ -1,4 +1,4 @@
-# Cypress tests for uteka desktop
+# Cypress tests for site
 
 ### Requirements
 

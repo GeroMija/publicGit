@@ -1,6 +1,4 @@
-let s = require('../../../storage/data_selectors.json'),
-    date = new Date(),
-    note = `Hello world! ${date}`;
+let note = `Hello world! ${new Date()}`;
 
 describe(`Create_new_message`, function() {
 
