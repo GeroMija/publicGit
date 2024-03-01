@@ -4,7 +4,7 @@ it(`test2`, function() {
         // cy.get('.header-main__inner')
         //     .screenshot({ 'name': '123' })
         // cy.get('.footer')
-        //     .screenshot({ 'name': '123' })
+        //     .screenshot({ 'name': '123' })1
 
     cy.log('first snapshot')
     cy.wrap({ foo: 12 }).snapshot()
