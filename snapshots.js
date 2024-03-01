@@ -7,5 +7,5 @@ module.exports = {
       "bar": 101
     }
   },
-  "__version": "13.3.3"
+  "__version": "13.6.6"
 }
