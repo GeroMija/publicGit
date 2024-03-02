@@ -10,6 +10,6 @@ it(`test2`, function() {
     cy.wrap({ foo: 12 }).snapshot()
 
     cy.log('second snapshot')
-    cy.wrap({ bar: 101 }).snapshot({ 'name': 'ggg' })
+    cy.wrap({ bar: 101 }).snapshot({ 'name': 'gg1g' })
 
 });;
