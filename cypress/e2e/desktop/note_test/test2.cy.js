@@ -12,4 +12,4 @@ it(`test2`, function() {
     cy.log('second snapshot')
     cy.wrap({ bar: 101 }).snapshot({ 'name': 'ggg' })
 
-});;
+});
