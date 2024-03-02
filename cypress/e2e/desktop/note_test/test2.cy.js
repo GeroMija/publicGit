@@ -8,6 +8,7 @@ it(`test2`, function() {
 
     cy.log('first snapshot')
     cy.wrap({ foo: 12 }).snapshot()
+
     cy.log('second snapshot')
     cy.wrap({ bar: 101 }).snapshot({ 'name': 'ggg' })
 
